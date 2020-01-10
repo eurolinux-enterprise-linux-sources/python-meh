@@ -1,53 +1,49 @@
-# puthon-meh
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Translation to Dutch
-# Geert Warrink <geert.warrink@onsnet.nu>, 2009, 2010.
+#
+# Fawaz Al-Alayn <Fawaz_ksu@yahoo.com>, 2010.
+# Munzir Taha (منذر طه) <munzirtaha@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: python-meh\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-16 15:00-0400\n"
-"PO-Revision-Date: 2010-07-04 15:10+0200\n"
-"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
-"Language-Team: Fedora\n"
-"Language: nl\n"
+"PO-Revision-Date: 2010-07-14 10:13+0300\n"
+"Last-Translator: Fawaz Alalyan <fawaz_ksu@yahoo.com>\n"
+"Language-Team: Arabic <trans-ar@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: ../src/handler.py:209
 msgid "Dump Written"
-msgstr "Dump geschreven"
+msgstr "تمت كتابة التفريغ"
 
 #: ../src/handler.py:210
 msgid ""
 "The error file has been successfully written to the disk.  The program will "
 "now exit."
-msgstr ""
-"Het fout bestand is succesvol naar schijf geschreven.  Het programma wordt "
-"nu afgesloten."
+msgstr "تم كتابة الملف الخاطئ في القرص. وسيقوم البرنامج بالخروج الآن."
 
 #: ../src/handler.py:215
 msgid "Dump Not Written"
-msgstr "Dump niet geschreven"
+msgstr "لم تتم كتابة التفريغ"
 
 #: ../src/handler.py:216
 msgid "There was a problem writing the error report."
-msgstr "Er was een probleem met het schrijven van het fout rapport."
+msgstr "كانت هناك مشكلة في كتابة تقرير عن الخطأ."
 
 #: ../src/handler.py:219
 msgid "No Network Available"
-msgstr "Geen netwerk beschikbaar"
+msgstr "لا توجد شبكة متوفرة"
 
 #: ../src/handler.py:220
 msgid ""
 "Cannot save a bug report since there is no active network device available."
-msgstr ""
-"Kan geen fout rapport schrijven omdat er geen actief netwerk interface "
-"beschikbaar is."
+msgstr "يتعذر حفظ تقرير الخطأ بسبب عدم توفر أجهرة شبكة فعالة."
 
 #: ../src/savers.py:34
 #, python-format
@@ -57,8 +53,8 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Jouw fout kon niet opgeslagen worden door de volgende fout tijdens de "
-"communicatie met bugzilla:\n"
+"مشكلتك لا يمكن تسجيلها بسبب الخطأ التالي عند الاتصال "
+"مع bugzilla:\n"
 "\n"
 "%s"
 
@@ -70,54 +66,51 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Jouw fout kon niet opgeslagen worden door verkeerde informatie in de fout "
-"velden.  Dit is waarschijnlijk een fout in het fout rapportering programma:\n"
+"مشكلتك لا يمكن تسجيلها بسبب المعلومات غير المناسبة في حقول المشكلة. هذا "
+"في الأغلب خطأ في برنامج تسجيل المشكلة:\n"
 "\n"
 "%s"
 
 #: ../src/savers.py:41
 msgid "Unable To File Bug"
-msgstr "Niet in staat de fout op te slaan"
+msgstr "غير قادر على تسجيل المشكلة"
 
 #: ../src/savers.py:47
 msgid "Bug Filing Not Supported"
-msgstr "Opslaan van fout wordt niet ondersteund"
+msgstr "تسجيل المشكلة غير مدعوم"
 
 #: ../src/savers.py:48
 msgid ""
 "Your distribution does not provide a supported bug filing system, so you "
 "cannot save your exception this way."
 msgstr ""
-"Jouw distributie biedt geen ondersteuning voor een fout rapportering "
-"systeem, dus je kunt jouw uitzondering niet op deze manier opslaan."
+"توزيعتك لا يوفر دعم نظام تسجيل المشكلة، لذلك لا يمكنك"
+"حفظ خطئك بهذه الطريقة."
 
 #: ../src/savers.py:54
 msgid "Invalid Bug Information"
-msgstr "Ongeldige fout informatie"
+msgstr "معلومات المشكلة غير صالحة"
 
 #: ../src/savers.py:55
 msgid "Please provide a valid username, password, and short bug description."
-msgstr ""
-"Geef a.u.b. een geldige gebruikers naam, wachtwoord, en een korte fout "
-"beschrijving op."
+msgstr "الرجاء التزويد باسم مستخدم صالح، كلمة مرور, ووصف قصير للمشكلة."
 
 #: ../src/savers.py:62
 msgid "Unable To Login"
-msgstr "Niet in staat om in te loggen"
+msgstr "غير قادر على تسجيل الدخول"
 
 #: ../src/savers.py:63
 #, python-format
 msgid ""
 "There was an error logging into %s using the provided username and password."
 msgstr ""
-"Er trad een fout op met het inloggen op %s met de opgegeven gebruikers naam "
-"en wachtwoord."
+"هنالك مشكلة في الدخول إلى %s باستخدام اسم المستخدم وكلمة المرور المعطاة."
 
 #. Tell the user we created a new bug for them and that they should
 #. go add a descriptive comment.
 #: ../src/savers.py:99
 msgid "Bug Created"
-msgstr "Fout aangemaakt"
+msgstr "تم إنشاء المشكلة"
 
 #: ../src/savers.py:100
 #, python-format
@@ -128,9 +121,9 @@ msgid ""
 "\n"
 "%s/%s"
 msgstr ""
-"Een nieuwe fout is aangemaakt met jouw traceback toegevoegd. Voeg a.u.b. "
-"extra informatie toe, zoals wat je aan het doen was toen de fout optrad, "
-"scherm afdrukken, en wat nog meer van belang kan zijn voor de volgende fout:\n"
+"مشكلة جديدة أنشئت مع اتصال traceback الخاص بك. الرجاء إضافة"
+"معلومات إضافية مثل ماذا كنت تفعل عندما واجهت"
+"المشكلة، صور من الشاشة, و أي شيء آخر هو مناسب للمشكلة التالية:\n"
 "\n"
 "%s/%s"
 
@@ -138,7 +131,7 @@ msgstr ""
 #. go add a descriptive comment.
 #: ../src/savers.py:114
 msgid "Bug Updated"
-msgstr "Fout vernieuwd"
+msgstr "تم تحديث المشكلة"
 
 #: ../src/savers.py:115
 #, python-format
@@ -149,45 +142,44 @@ msgid ""
 "\n"
 "%s/%s"
 msgstr ""
-"Een fout met jouw informatie bestaat al.  Jouw account is toegevoegd aan de "
-"CC lijst en jouw traceback is toegevoegd als commentaar.  Voeg a.u.b. extra "
-"beschrijvende informatie toe aan de volgende fout:\n"
+"مشكلة مع معلوماتك موجودة مسبقا. حسابك أضيف إلى"
+"قائمة الـ CC و الـ traceback الخاص بك أضيف كملاحظة. الرجاء إضافة معلومات"
+"وصفية إضافية إلى المشكلة التالية:\n"
 "\n"
 "%s/%s"
 
 #. Set the buttons.
 #: ../src/ui/gui.py:85
 msgid "_Debug"
-msgstr "_Debug"
+msgstr "_تصحيح الأخطاء"
 
 #: ../src/ui/gui.py:87 ../src/ui/gui.py:152
 msgid "_Exit"
-msgstr "V_erlaten"
+msgstr "_خروج"
 
 #: ../src/ui/gui.py:92
 msgid ""
 "An unhandled exception has occurred.  This is most likely a bug.  Please "
 "save a copy of the detailed exception and file a bug report."
 msgstr ""
-"Een niet afgehandelde uitzondering is opgetreden.  Dit is hoogst "
-"waarschijnlijk een fout.  Sla a.u.b een kopie van de gedetailleerde "
-"uitzondering op en maak een fout rapport aan."
+"حدث خطأ لا يمكن التعامل معه. هذه في الأغلب مشكلة. الرجاء "
+"احفظ نسخة من الخطأ المفصل وسجل تقرير المشكلة."
 
 #: tmp/detailed-dialog.glade.h:1
 msgid "Info"
-msgstr "Info"
+msgstr "معلومات"
 
 #: tmp/detailed-dialog.glade.h:2
 msgid "_Details"
-msgstr "_Details"
+msgstr "_تفاصيل"
 
 #: tmp/exnSave.glade.h:1
 msgid "Bug _description"
-msgstr "Fout _beschrijving"
+msgstr "ت_فاصيل المشكلة"
 
 #: tmp/exnSave.glade.h:2
 msgid "Destination _file"
-msgstr "Bestemming bestand"
+msgstr "_ملف الوجهة"
 
 #: tmp/exnSave.glade.h:3
 msgid ""
@@ -195,30 +187,32 @@ msgid ""
 "Bugzilla\n"
 "Remote server (scp)"
 msgstr ""
-"Locale opslag\n"
+"التخزين المحلي\n"
 "Bugzilla\n"
-"Server op afstand (scp)"
+"الخادم البعيد (scp)"
 
 #: tmp/exnSave.glade.h:6
 msgid "Please choose a destination for saving your traceback."
-msgstr "Kies a.u.b. een bestemming voor het opslaan van jouw traceback."
+msgstr "الرجاء اختيار وجهة لحفظ الـ traceback الخاص بك."
 
 #: tmp/exnSave.glade.h:7
 msgid "Save"
-msgstr "Opslaan"
+msgstr "حفظ"
 
 #: tmp/exnSave.glade.h:8
 msgid "Select A File"
-msgstr "Selecteer een bestand"
+msgstr "اختر ملف"
 
 #: tmp/exnSave.glade.h:9
 msgid "_Host (host:port)"
-msgstr "_Host (host:poort)"
+msgstr "ال_مضيف (المضيف:المنفذ)"
 
 #: tmp/exnSave.glade.h:10
 msgid "_Password"
-msgstr "_Wachtwoord"
+msgstr "_كلمة المرور"
 
 #: tmp/exnSave.glade.h:11
 msgid "_User name"
-msgstr "_Gebruikers naam"
+msgstr "ا_سم المستخدم"
+
+

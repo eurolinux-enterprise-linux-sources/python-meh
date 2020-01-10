@@ -1,3 +1,68 @@
+commit a90a6dc9f53b411d8dfb95fb06b7506b9c57f7c4
+Author: Chris Lumens <clumens@redhat.com>
+Date:   Tue Jan 25 11:11:42 2011 -0500
+
+    New version.
+
+commit b5445646ea6d46c60b53152093483307a39de12b
+Author: Chris Lumens <clumens@redhat.com>
+Date:   Wed Jan 19 10:43:11 2011 -0500
+
+    Update the spec file URL to something valid (#670601).
+
+commit 79d4ebe0f7f1e25d3e420713c9bfe1ef41fca61d
+Author: Chris Lumens <clumens@redhat.com>
+Date:   Wed Jan 19 10:42:45 2011 -0500
+
+    Don't use _D for Debug, since that's already used by the expander (#640929).
+
+commit 843960ebaac4dff217fcfa6424f6e3d7412c8d4c
+Author: ncfiedler <ncfiedler@fedoraproject.org>
+Date:   Sun Dec 5 16:22:55 2010 +0000
+
+    l10n: Added Low German translation
+    
+    Transmitted-via: Transifex (translate.fedoraproject.org)
+
+commit 65414d50ff5b66a19fd23f4abb816b9a6fd367cb
+Author: bluebat <bluebat@fedoraproject.org>
+Date:   Sat Sep 18 07:13:11 2010 +0000
+
+    l10n: Initial Traditional Chinese translation
+    
+    Transmitted-via: Transifex (translate.fedoraproject.org)
+
+commit 60b441e02938278e44555aaa46e32dad1b60af66
+Author: munzirtaha <munzirtaha@fedoraproject.org>
+Date:   Wed Jul 14 07:16:15 2010 +0000
+
+    l10n: Arabic translation committed. Thanks Fawaz from KSU
+    
+    Transmitted-via: Transifex (translate.fedoraproject.org)
+
+commit cb66d8b8d68a99a5eac636d5cf57829e3b79400e
+Author: warrink <warrink@fedoraproject.org>
+Date:   Sun Jul 4 13:11:49 2010 +0000
+
+    l10n: Updates to Dutch (Flemish) (nl) translation
+    
+    Transmitted-via: Transifex (translate.fedoraproject.org)
+
+commit c839aff9bdc49e15712c58ee187b0b866731ef68
+Author: Chris Lumens <clumens@redhat.com>
+Date:   Tue Jun 22 11:04:27 2010 -0400
+
+    New version.
+
+commit 5dfc751a862d6b463c3300f3e3728316d9723cdc
+Author: Chris Lumens <clumens@redhat.com>
+Date:   Tue Jun 22 10:43:32 2010 -0400
+
+    Treat classes like simple types, too.
+    
+    This avoid the "AttributeError: class KSOption has no attribute '__class__'"
+    traceback seen in a lot of anaconda exception reports.
+
 commit 8f75611e5649e4ed3a5f8e8216daaf48c47cf9db
 Author: Chris Lumens <clumens@redhat.com>
 Date:   Thu Jun 10 16:09:02 2010 -0400
