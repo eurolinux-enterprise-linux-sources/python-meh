@@ -3,7 +3,7 @@
 Summary:  A python library for handling exceptions
 Name: python-meh
 Url: http://git.fedorahosted.org/git/?p=python-meh.git
-Version: 0.11
+Version: 0.12.1
 Release: 3%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
@@ -12,15 +12,15 @@ Release: 3%{?dist}
 #   git clone git://git.fedoraproject.org/git/python-meh.git
 #   cd python-meh && make archive
 Source0: %{name}-%{version}.tar.gz
-Patch0: python-meh-info.patch
 
 License: GPLv2+
 Group: System Environment/Libraries
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: python-devel, gettext, python-setuptools-devel, intltool
+BuildRequires: dbus-python, libreport-gtk, libreport-newt
 Requires: python, dbus-python, pygtk2, pygtk2-libglade
-Requires: openssh-clients, rpm, yum, newt-python, libreport-gtk libreport-newt
+Requires: openssh-clients, rpm, yum, newt-python, libreport-gtk >= 2.0.9, libreport-newt >= 2.0.9
 
 %description
 The python-meh package is a python library for handling, saving, and reporting
@@ -28,10 +28,12 @@ exceptions.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 make
+
+%check
+make test
 
 %install
 rm -rf %{buildroot}
@@ -48,6 +50,20 @@ rm -rf %{buildroot}
 %{_datadir}/python-meh
 
 %changelog
+* Wed Mar 21 2012 Vratislav Podzimek <vpodzime@redhat.com> 0.12.1-3
+- Add dbus-python and libreport to BuildRequires (vpodzime).
+  Related: rhbz#796176
+
+* Wed Mar 21 2012 Vratislav Podzimek <vpodzime@redhat.com> 0.12.1-2
+- Add %check section to spec file (vpodzime).
+  Resolves: rhbz#796176
+
+* Thu Feb 16 2012 Vratislav Podzimek <vpodzime@redhat.com> 0.12.1-1
+- Adapt to new libreport API (vpodzime).
+  Resolves: rhbz#769821
+- Add info about environment variables (vpodzime).
+  Resolves: rhbz#788577
+
 * Thu Oct 27 2011 Chris Lumens <clumens@redhat.com> 0.11-3
 - Move "import rpm" to where it's needed to avoid nameserver problems.
   Resolves: rhbz#749330

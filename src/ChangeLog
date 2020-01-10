@@ -1,3 +1,79 @@
+commit 4c4074c830b22d2d04a531b3324677d7ece771eb
+Author: Vratislav Podzimek <vpodzime@redhat.com>
+Date:   Thu Feb 16 13:50:55 2012 +0100
+
+    New version.
+
+commit 3c6ca4589ade977da106f5bb1cf29b369d901258
+Author: Vratislav Podzimek <vpodzime@redhat.com>
+Date:   Thu Feb 16 13:46:10 2012 +0100
+
+    Update spec to follow the rhel6 builds.
+
+commit 30b4ce91b7eb02852199fec8a05d270500689b86
+Author: Vratislav Podzimek <vpodzime@redhat.com>
+Date:   Tue Nov 8 10:42:32 2011 +0100
+
+    Use self.conf.* values when rpmdb queries fail.
+    
+    Resolves: rhbz#769821
+    Bugzilla needs to know at least valid component name.
+    
+    (cherry-picked from 0a02db895d3955cd154abd24e2f055aec672c7cd)
+
+commit 3e7f5ab8015e63400a27b5a2fbc8b28bf4b86dee
+Author: Vratislav Podzimek <vpodzime@redhat.com>
+Date:   Fri Oct 21 13:47:43 2011 +0200
+
+    Add info about environment variables.
+    
+    Resolves: rhbz#788577
+    
+    (cherry-picked from 04b70ff43483d7079217ea0b440f86cb3f5a47c9)
+
+commit 1890b449a7fd6660aac1439f64bc834cae0d6b93
+Author: Vratislav Podzimek <vpodzime@redhat.com>
+Date:   Tue Oct 18 11:22:06 2011 +0200
+
+    Use a dictionary to pass args to report.createPythonUnhandledExceptionSignature.
+    
+    Resolves: rhbz#769821
+    
+    (cherry-picked from ad178a242d350cbccb687135677143e8fc0e574c)
+
+commit 204e5130a7246aa807cf62186405ba1b4558d8dd
+Author: Vratislav Podzimek <vpodzime@redhat.com>
+Date:   Fri Jan 6 10:35:28 2012 +0100
+
+    remove patch0 from the spec file
+    
+    This two lines got to the spec file unintentionally with the be38ecc0d01 (Change dependency to libreport-*)
+    we already have all changes from that patch in the sources.
+
+commit d5d99e90addea7790cab0d8500fa52f084702103
+Author: Chris Lumens <clumens@redhat.com>
+Date:   Tue Nov 1 17:33:39 2011 +0100
+
+    Move "import rpm" to where it's needed to avoid nameserver problems.
+
+commit be38ecc0d01cc40137bf7375432cbadf93848cb6
+Author: Michal Toman <mtoman@redhat.com>
+Date:   Tue Nov 1 17:22:19 2011 +0100
+
+    Change dependency to libreport-*.
+
+commit af5eb57546ffd7874ed48d35fce09fd56242b8ed
+Author: Vratislav Podzimek <vpodzime@redhat.com>
+Date:   Tue Nov 1 17:16:48 2011 +0100
+
+    Add abrt-like information to bug reports.
+
+commit af0c391214ad3d14ca728f2566f09f7baa82c25b
+Author: Chris Lumens <clumens@redhat.com>
+Date:   Thu Aug 25 09:36:45 2011 -0400
+
+    Propagate the screen attr when using text mode (jmoskovc).
+
 commit a90a6dc9f53b411d8dfb95fb06b7506b9c57f7c4
 Author: Chris Lumens <clumens@redhat.com>
 Date:   Tue Jan 25 11:11:42 2011 -0500
