@@ -5,8 +5,8 @@
 Summary:  A python library for handling exceptions
 Name: python-meh
 Url: http://git.fedorahosted.org/git/?p=python-meh.git
-Version: 0.25
-Release: 2%{?dist}
+Version: 0.25.2
+Release: 1%{?dist}
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
@@ -21,13 +21,22 @@ BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: python-devel, gettext, python-setuptools-devel, intltool
 BuildRequires: dbus-python, libreport-gtk >= %{libreportver}, libreport-cli >= %{libreportver}
-Requires: python, dbus-python, pygobject3, gtk3
+Requires: python, dbus-python
 Requires: openssh-clients, rpm-python, yum
-Requires: libreport-gtk >= %{libreportver}, libreport-cli >= %{libreportver}
+Requires: libreport-cli >= %{libreportver}
 
 %description
 The python-meh package is a python library for handling, saving, and reporting
 exceptions.
+
+%package gui
+Summary: Graphical user interface for the python-meh library
+Requires: python-meh = %{version}-%{release}
+Requires: pygobject3, gtk3
+Requires: libreport-gtk >= %{libreportver}
+
+%description gui
+The python-meh-gui package provides a GUI for the python-meh library.
 
 %prep
 %setup -q
@@ -50,9 +59,21 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc ChangeLog COPYING
 %{python_sitelib}/*
+%exclude %{python_sitelib}/meh/ui/gui.py*
+
+%files gui
+%{python_sitelib}/meh/ui/gui.py*
 %{_datadir}/python-meh
 
 %changelog
+* Thu Sep 11 2014 Martin Kolman <mkolman@redhat.com> - 0.25.2-1
+- Exclude compiled versions of gui.py from the non-gui package (dshea)
+  Resolves: rhbz#1140623
+
+* Thu Sep 04 2014 Martin Kolman <mkolman@redhat.com> - 0.25.1-1
+- Split GUI out into a separate package (#1136795) (vpodzime)
+  Resolves: rhbz#1136795
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.25-2
 - Mass rebuild 2013-12-27
 

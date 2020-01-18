@@ -1,3 +1,42 @@
+commit 92195e3f19489ab55ed5187b77618a759c3256fb
+Author: Martin Kolman <mkolman@redhat.com>
+Date:   Thu Sep 11 17:46:07 2014 +0200
+
+    New version - 0.25.2
+
+commit 1928a3e623fb1a38bb9ddb1a97a3ee260507d5f1
+Author: David Shea <dshea@redhat.com>
+Date:   Thu Sep 11 09:49:32 2014 -0400
+
+    Exclude compiled versions of gui.py from the non-gui package
+    
+    Resolves: rhbz#1140623
+    
+    (cherry picked from commit 0d7c3364fd8f08e194f3edb62766d0e39573b5b9)
+
+commit ebc3cbb5863c9b8e8304a60921d74127b71c67e4
+Author: Martin Kolman <mkolman@redhat.com>
+Date:   Thu Sep 4 11:32:44 2014 +0200
+
+    Update specfile from downstream
+
+commit 7588abca177c61159cac8a0fe2bf85c458eb5378
+Author: Martin Kolman <mkolman@redhat.com>
+Date:   Thu Sep 4 11:15:37 2014 +0200
+
+    New version - 0.25.1
+
+commit 3fcc3a5324370215ebb9656df657e26e37e7d1c8
+Author: Vratislav Podzimek <vpodzime@redhat.com>
+Date:   Wed Sep 3 12:12:53 2014 +0200
+
+    Split GUI out into a separate package (#1136795)
+    
+    Interactive exception handling and reporting generally doesn't require GUI so we
+    should allow using python-meh without pulling in the whole graphical stack.
+    
+    Related: rhbz#1012509
+
 commit a58d3d20dade714c9954412ab22827742d4b33cf
 Author: Vratislav Podzimek <vpodzime@redhat.com>
 Date:   Tue Jun 18 12:25:48 2013 +0200

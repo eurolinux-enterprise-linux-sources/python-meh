@@ -3,17 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Cheng-Chia Tseng <pswo10680@gmail.com>, 2011
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2011,2013
+# Dimitris Glezos <glezos@transifex.com>, 2011
 # Dimitris Glezos <glezos@transifex.com>, 2011
 # Walter Cheuk <wwycheuk@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: python-meh\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-18 12:23+0200\n"
-"PO-Revision-Date: 2013-04-17 10:40+0000\n"
-"Last-Translator: vpodzime <vpodzime@redhat.com>\n"
-"Language-Team: Chinese (Taiwan) <trans-zh_TW@lists.fedoraproject.org>\n"
+"POT-Creation-Date: 2014-09-04 11:10+0200\n"
+"PO-Revision-Date: 2014-09-04 09:10+0000\n"
+"Last-Translator: MartinK <martin.kolman@gmail.com>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/python-meh/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,24 +24,24 @@ msgstr ""
 #. short (one-char) answer meaning "yes"
 #: ../meh/ui/text.py:70
 msgid "y"
-msgstr ""
+msgstr "y"
 
 #. short (one-char) answer meaning "no"
 #: ../meh/ui/text.py:73
 msgid "n"
-msgstr ""
+msgstr "n"
 
 #: ../meh/ui/text.py:140
 msgid "Save exception"
-msgstr ""
+msgstr "儲存例外"
 
 #: ../meh/ui/text.py:153 tmp/exception-dialog.glade.h:1
 msgid "An unknown error has occurred"
-msgstr ""
+msgstr "遭遇未知錯誤"
 
 #: ../meh/ui/text.py:156
 msgid "Report Bug"
-msgstr ""
+msgstr "回報臭蟲"
 
 #: ../meh/ui/text.py:157
 msgid "Debug"
@@ -48,24 +49,24 @@ msgstr "除錯"
 
 #: ../meh/ui/text.py:158
 msgid "Quit"
-msgstr ""
+msgstr "退出"
 
 #: ../meh/ui/text.py:163
 msgid "What do you want to do now?"
-msgstr ""
+msgstr "您現在想怎麼做？"
 
 #: ../meh/ui/text.py:171
 msgid "Please make your choice from above: "
-msgstr ""
+msgstr "請從上列做出您的選擇："
 
 #: ../meh/ui/text.py:189
 msgid "Hit ENTER to continue"
-msgstr ""
+msgstr "按下 Enter 繼續"
 
 #: ../meh/ui/text.py:203
 #, python-format
 msgid "Are you sure you want to exit? [%(yes)s/%(no)s]"
-msgstr ""
+msgstr "您確定要離開？[%(yes)s/%(no)s]"
 
 #: ../meh/ui/gui.py:150
 msgid "_Exit"
@@ -75,32 +76,32 @@ msgstr "離開(_E)"
 msgid ""
 "This program has encountered an unknown error. You may\n"
 "report the bug below or quit the program."
-msgstr ""
+msgstr "此程式遭遇未知錯誤。您可以在下方回報\n臭蟲或退出程式。"
 
 #: tmp/exception-dialog.glade.h:4
 msgid "_Report Bug"
-msgstr ""
+msgstr "回報臭蟲(_R)"
 
 #: tmp/exception-dialog.glade.h:5
 msgid "_Quit"
-msgstr ""
+msgstr "退出(_Q)"
 
 #: tmp/exception-dialog.glade.h:6
 msgid "The output below may help determine the cause of the error:"
-msgstr ""
+msgstr "下方的輸入可以幫助判斷錯誤的原因："
 
 #: tmp/exception-dialog.glade.h:7
 msgid "'Debug' may take you to tty1."
-msgstr ""
+msgstr "「除錯」會帶您前往 tty1。"
 
 #: tmp/exception-dialog.glade.h:8
 msgid "_Debug"
-msgstr ""
+msgstr "除錯(_D)"
 
 #: tmp/exception-dialog.glade.h:9
 msgid "More _info..."
-msgstr ""
+msgstr "更多資訊(_I)..."
 
 #: tmp/exception-dialog.glade.h:10
 msgid "No additional info available."
-msgstr ""
+msgstr "無其他可用資訊。"
