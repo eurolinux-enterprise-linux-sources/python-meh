@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Dimitris Glezos <glezos@transifex.com>, 2011
 # dominique bribanick <chepioq@gmail.com>, 2012-2013
@@ -9,17 +9,18 @@
 # Sam Friedmann <sam.friedmann@redhat.com>, 2009
 msgid ""
 msgstr ""
-"Project-Id-Version: python-meh\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:10+0200\n"
-"PO-Revision-Date: 2014-09-04 09:10+0000\n"
-"Last-Translator: MartinK <martin.kolman@gmail.com>\n"
+"POT-Creation-Date: 2019-05-20 14:48+0200\n"
+"PO-Revision-Date: 2015-01-14 07:16+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/python-meh/language/fr/)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Zanata 4.6.2\n"
 
 #. short (one-char) answer meaning "yes"
 #: ../meh/ui/text.py:70
@@ -76,7 +77,9 @@ msgstr "_Fermer"
 msgid ""
 "This program has encountered an unknown error. You may\n"
 "report the bug below or quit the program."
-msgstr "Ce programme a rencontré une erreur inconnue. Vous pouvez rapporter cette anomalie ou quitter le programme. "
+msgstr ""
+"Ce programme a rencontré une erreur inconnue. Vous pouvez rapporter cette "
+"anomalie ou quitter le programme. "
 
 #: tmp/exception-dialog.glade.h:4
 msgid "_Report Bug"
@@ -88,7 +91,9 @@ msgstr "_Quitter"
 
 #: tmp/exception-dialog.glade.h:6
 msgid "The output below may help determine the cause of the error:"
-msgstr "La sortie ci-dessous peut vous permettre de déterminer la cause de l'erreur :"
+msgstr ""
+"La sortie ci-dessous peut vous permettre de déterminer la cause de l'erreur "
+":"
 
 #: tmp/exception-dialog.glade.h:7
 msgid "'Debug' may take you to tty1."

@@ -1,3 +1,30 @@
+commit 8aabee15a7e50997acb5ab4e58fc2dca36404222
+Author: Martin Kolman <mkolman@redhat.com>
+Date:   Mon May 20 14:54:39 2019 +0200
+
+    New version - 0.25.3
+
+commit 9bf1176b8cec6b8795f5e8d310b289f901be4399
+Merge: 92195e3 3ca94f0
+Author: Martin Kolman <mkolman@redhat.com>
+Date:   Mon May 20 14:47:23 2019 +0200
+
+    Merge pull request #19 from M4rtinK/rhel7-branch-swith_to_zanata_for_translations
+    
+    Switch from Transifex to Zanata fro pulling translations
+
+commit 3ca94f0263ca02c928b48a6126bc46e020d76d2b
+Author: Martin Kolman <mkolman@redhat.com>
+Date:   Sat May 18 01:01:27 2019 +0200
+
+    Switch from Transifex to Zanata fro pulling translations
+    
+    Since the previous python-meh release for RHEL7 it's translation
+    project has moved from Transifex to Zanata, so update the
+    makefile to pull translations from Zanata.
+    
+    Related: rhbz#1688260
+
 commit 92195e3f19489ab55ed5187b77618a759c3256fb
 Author: Martin Kolman <mkolman@redhat.com>
 Date:   Thu Sep 11 17:46:07 2014 +0200
